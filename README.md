@@ -3,44 +3,9 @@
 ## Project Overview
 This project collects and analyzes product reviews to predict whether products will be useful in India. The dataset consists of reviews for 50 products, each with 500 reviews, and is specifically focused on feedback from Indian users. The process includes sentiment analysis, aspect-based opinion mining, and the use of classification models to make predictions for future products.
 
----
+----
 
-## Task 1: Dataset Collection
-
-### Objectives:
-- Collect a dataset of 50 products, each with 500 reviews, from Indian users.
-- Annotate whether each product is useful in India based on the review text.
-
-### Method:
-1. **Data Collection**: Automatically scrape and collect product review data from relevant sources that focus on Indian users' feedback.
-2. **Annotation**: Based on the review content, classify whether the product is deemed "useful" or "not useful" for Indian users.
-
----
-
-## Task 2: Perform Analysis
-
-### Sentiment Analysis:
-- **Objective**: Understand the overall sentiment of each product by analyzing whether users like or dislike the product.
-- **Approach**: Using sentiment analysis tools to extract sentiment scores (positive, negative, neutral) from user reviews.
-
-### Aspect-Based Opinion Mining:
-- **Objective**: Identify specific parts of the product that are either appreciated or criticized.
-- **Approach**: 
-    - Extract and categorize aspects (e.g., quality, packaging, performance, etc.) mentioned in the reviews.
-    - Classify the sentiment related to each aspect (positive/negative/neutral).
-
-### Summary of User Reactions:
-- **Objective**: Display a summary of overall user reactions.
-- **Approach**: Combine sentiment and aspect-based analysis to create a comprehensive view of user feedback, summarizing what users liked and disliked about each product.
-
----
-
-## Task 3: Classification Model
-
-### Objective:
-- Predict whether future products will be useful in India based on the analysis from the previous tasks.
-
-### Approach:
+# Approach:
 1. **Feature Extraction**: Use the insights gained from sentiment analysis and aspect-based opinion mining as features.
 2. **Model Selection**: Run a classification model ( Random Forest ) to predict the usefulness of a product in India.
 3. **Model Evaluation**: Assess model performance using metrics like accuracy, precision, recall, F1 score, and ROC AUC.
@@ -98,7 +63,7 @@ The results of this analysis were saved into two CSV files:
 This analysis helps us understand both the general sentiment towards each product as well as specific aspects that users like or dislike.
 
 ---
-Approach for Task 3: Product Review Classification Model
+## Task 3: Product Review Classification Model
 In this task, the goal is to build a machine learning model that classifies product reviews as either "Useful" or "Not Useful". Below is a step-by-step breakdown of the approach followed in the code:
 
 1. Data Preprocessing and Merging
